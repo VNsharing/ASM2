@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "DOB": "2000-03-15",
+    "fullName": "John Smith",
+    "email": "johnsmith@example.com",
+    "phone": "\u002B1 123-456-7890",
+    "gender": "Male",
+    "major": null
+  },
+  {
+    "id": 2,
+    "DOB": "2001-06-20",
+    "fullName": "Emily Johnson",
+    "email": "emilyjohnson@example.com",
+    "phone": "\u002B1 987-654-3210",
+    "gender": "Female",
+    "major": null
+  },
+  {
+    "id": 3,
+    "DOB": "1999-09-05",
+    "fullName": "Daniel Wilson",
+    "email": "danielwilson@example.com",
+    "phone": "\u002B1 555-123-4567",
+    "gender": "Male",
+    "major": null
+  },
+  {
+    "id": 4,
+    "DOB": "2002-02-10",
+    "fullName": "Sophia Thompson",
+    "email": "sophiathompson@example.com",
+    "phone": "\u002B1 111-222-3333",
+    "gender": "Female",
+    "major": null
+  },
+  {
+    "id": 5,
+    "DOB": "2001-11-30",
+    "fullName": "Matthew Davis",
+    "email": "matthewdavis@example.com",
+    "phone": "\u002B1 999-888-7777",
+    "gender": "Male",
+    "major": null
+  },
+  {
+    "id": 6,
+    "DOB": "2000-08-12",
+    "fullName": "Olivia Wilson",
+    "email": "oliviawilson@example.com",
+    "phone": "\u002B1 333-444-5555",
+    "gender": "Female",
+    "major": null
+  },
+  {
+    "id": 7,
+    "DOB": "2002-05-25",
+    "fullName": "Benjamin Lee",
+    "email": "benjaminlee@example.com",
+    "phone": "\u002B1 777-888-9999",
+    "gender": "Male",
+    "major": null
+  }
+]

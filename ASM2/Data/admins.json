@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "DOB": "1990-01-01",
+    "fullName": "John Doe",
+    "email": "johndoe@example.com",
+    "phone": "\u002B1 123-456-7890",
+    "gender": "Male"
+  },
+  {
+    "id": 2,
+    "DOB": "1985-05-10",
+    "fullName": "Jane Smith",
+    "email": "janesmith@example.com",
+    "phone": "\u002B1 987-654-3210",
+    "gender": "Female"
+  },
+  {
+    "id": 3,
+    "DOB": "1988-09-15",
+    "fullName": "Robert Johnson",
+    "email": "robertjohnson@example.com",
+    "phone": "\u002B1 555-123-4567",
+    "gender": "Male"
+  },
+  {
+    "id": 4,
+    "DOB": "2024-04-26",
+    "fullName": "Aaron keeper",
+    "email": "Admin3",
+    "phone": "99996666",
+    "gender": "Male"
+  }
+]

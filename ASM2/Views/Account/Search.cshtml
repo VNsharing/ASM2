@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Search";
+}
+<div class="container main-container w-70">
+    <div class="m-3">
+        <h1>Search</h1>
+        <form action="@Url.Action("Search", "Account")" method="post">
+            <input type="hidden" id="typeObj" name="typeObj" value="@ViewBag.typeObj" />
+            <div class="form-group row p-2">
+                <label for="role" class="col-sm-2 col-form-label">Role:</label>
+                <div class="col-sm-10">
+                    <select id="selectObj" class="form-control" onchange="setSearch(this.value)">
+                        <option value="Student" selected="@(ViewBag.typeObj == "Student" ? "selected" : null)">Student</option>
+                        <option value="Admin" selected="@(ViewBag.typeObj == "Admin" ? "selected" : null)" >Admin</option>
+                        <option value="Teacher" selected="@(ViewBag.typeObj == "Teacher" ? "selected" : null)">Teacher</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="keyword" placeholder="Enter your search query" />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Action</th> <!-- New column for delete button -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in ViewBag.users)
+            {
+                <tr>
+                    <td>@user.id</td>
+                    <td>@user.fullName</td>
+                    <td>@user.email</td>
+                    <td>@user.phone</td>
+                    <td>@user.DOB</td>
+                    <td>@user.gender</td>
+                    <td>
+                        <form method="post" action="@Url.Action("Delete", "Account")">
+                            <input type="hidden" id="id" name="id" value="@user.id" />
+                            <input type="hidden" id="typeObj" name="typeObj" value="@ViewBag.typeObj" />
+                            <button type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function setSearch(value) {
+        document.getElementById("typeObj").value = value;
+    }
+</script>
